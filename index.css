@@ -1,0 +1,38 @@
+body {
+    background-color: #c9a799;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .enlace { /*enlaces del menu debajo del banner*/
+    font-size: 27px;
+    text-decoration: none; /* Elimina el subrayado del texto */
+    font-weight: bold; /* Establece la letra en negrita */
+    margin-left: 250px;
+    color: #B2281F; /* Cambia "orange" al color deseado */
+  }
+
+  .enlace_footer {
+    font-size: 17px;
+    color: #FFFFFF; /* Cambia "orange" al color deseado */
+    text-decoration: none; /* Elimina el subrayado */
+  }
+
+  .foot {
+    color: #FFFFFF; /* Cambia "red" al color deseado */
+    background-color: #000000;
+    /*background-color: #A10010;*/
+    box-shadow: 0 0 150px rgba(0, 0, 0, 0.5); /* Agrega una sombra alrededor del borde */
+  }
+
+  .contenedor {
+    display: flex;
+  }
+  
+  .imagen { /* esta clase especifica las imagenes de las noticias, su tamaño y alineacion */
+    margin-right: 10px; /* Ajusta el espacio entre la imagen y el párrafo según tus necesidades */
+    width: 300px; /* Ancho deseado */
+    height: 200px; /* Alto deseado */
+      
+  }
+  
+  
