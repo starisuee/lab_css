@@ -1,7 +1,38 @@
 body {
     background-color: #c9a799;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
   }
+
+  header {                    /*    OTRO FLEX PARA EL HEADER ( EN DONDE VA EL LOGO Y EL BANNER)*/
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:white;
+    object-position: initial;
+    width: 100%;
+    border: solid 1px;/* ESTE BORDER ES SOLO PARA VISUALIZAR EL ESPACIO PUEDE ELIMINARSE*/
+}
+
+.navStyle{                  /*      EL ESTILO DE LA BARRA DE NAV, TAMBIEN HORIZONTAL Y CON MARGINS PARA SEPARAR UN POCO */
+  border: solid 1px;/* ESTE BORDER ES SOLO PARA VISUALIZAR EL ESPACIO PUEDE ELIMINARSE*/
+  display: flex; 
+  flex-direction: row; 
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.marginNav {                /*  MAS MARGENES AL NAV Y UN FLEX GROW PARA QUE EL MENU SE MANTENGA PROPORCIONAL AL ZOOM DE LA PANTALLA  */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  flex-grow: 1;
+  text-decoration: none; /* Elimina el subrayado del texto */
+  font-weight: bold; /* Establece la letra en negrita */
+  color: #B2281F; /* Cambia "orange" al color deseado */
+}
 
   .enlace { /*enlaces del menu debajo del banner*/
     font-size: 27px;
@@ -18,8 +49,8 @@ body {
   }
 
   .foot {
-    color: #FFFFFF; /* Cambia "red" al color deseado */
-    background-color: #000000;
+    color: #FFFFFF; /* cambbia el color del texto en el footer (pie de pagina) */
+    background-color: #000000; /* cambbia el color de fondo en el footer (pie de pagina) */
     /*background-color: #A10010;*/
     box-shadow: 0 0 150px rgba(0, 0, 0, 0.5); /* Agrega una sombra alrededor del borde */
   }
@@ -34,5 +65,3 @@ body {
     height: 200px; /* Alto deseado */
       
   }
-  
-  

@@ -1,0 +1,136 @@
+body {                          /* EL ESTILO DEL CUERPO DEL DOCUMENTO CON FLEX, ALINEACION Y VISUALIZACION EN PANTALLA */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background-color: #8E7DFF;
+    font-family: helvetica, sans-serif;
+}
+
+header {                    /*    OTRO FLEX PARA EL HEADER ( EN DONDE VA EL LOGO Y EL BANNER)*/
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:white;
+    object-position: initial;
+    width: 100%;
+    border: solid 1px;/* ESTE BORDER ES SOLO PARA VISUALIZAR EL ESPACIO PUEDE ELIMINARSE*/
+}
+
+main{                       /*      ESTILO DEL CONTENEDOR PRINCIPAL, PARA ALINEAR TODAS LAS SECCIONES DE NOTICIAS Y EL NAV*/
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionNoticias{           /*      ESTILO PARA QUE LAS NOTICIAS SE VEAN EN HORIZONTAL Y CENTRADAS  */
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+}
+
+.navStyle{                  /*      EL ESTILO DE LA BARRA DE NAV, TAMBIEN HORIZONTAL Y CON MARGINS PARA SEPARAR UN POCO */
+    border: solid 1px;/* ESTE BORDER ES SOLO PARA VISUALIZAR EL ESPACIO PUEDE ELIMINARSE*/
+    display: flex; 
+    flex-direction: row; 
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.marginNav {                /*  MAS MARGENES AL NAV Y UN FLEX GROW PARA QUE EL MENU SE MANTENGA PROPORCIONAL AL ZOOM DE LA PANTALLA  */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    flex-grow: 1;
+    text-decoration: none; /* Elimina el subrayado del texto */
+    font-weight: bold; /* Establece la letra en negrita */
+    color: #B2281F; /* Cambia "orange" al color deseado */
+  }
+
+.noticiaPreview{        /*  EL CONTENEDOR DE CADA NOTICIA, DENTRO CONTIENE SU TITULO E IMAGEN*/
+    display: flex; 
+    flex-direction: column;
+    width: 400px;
+    margin: 10px;
+    margin-bottom: 60px;
+}
+
+.noticiaTitle {         /*  ALTURA DEL TITULO, PARA QUE LAS IMAGENES DEBAJO QUEDEN ALINEADAS*/
+
+    height: 60px;
+  }
+
+.imgContainer {         /*  CONTENEDOR DE LA IMAGEN DE LA NOTICIA, CENTRA LAS IMAGENES CON EL TEXTO */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+}
+
+.imgNoticias{           /*  DIMENSIONES DE LAS IMAGENES PARA QUE TODAS SEAN UNIFORMES Y CENTREADAS*/
+    width:100%;
+    height: 260px;
+    object-fit: cover;
+    justify-content: center
+}
+
+.linkStyle {            /*  MARGEN AL LINK, PARA QUE NO QUEDE TAN PEGADO A LA IMAGEN. */
+    margin-top: 10px;
+    font-size: 15px;
+    text-decoration: none; /* Elimina el subrayado del texto */
+    font-weight: bold; /* Establece la letra en negrita */
+    color: #B2281F; /* Cambia "orange" al color deseado */
+}
+
+.footStyle {                    /* FOOTER AL FONDO DE LA PAGINA CON LOS ITEMS SEPARADOS CON SPACE-BETWEEN*/
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding: 10px;
+    border-top: solid 1px; /* ESTE BORDER ES SOLO PARA VISUALIZAR EL ESPACIO PUEDE ELIMINARSE*/
+    width: 100%;
+}
+
+
+/*  ESTILOS DE CONTACTO  */
+.sectionContacto {
+    display: flex;
+}
+
+.imgContainer  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.descripcionContacto {
+    width: 100%;
+}
+
+.imgContacto {
+    width: 200px;
+    height: auto;
+}
+
+.enlace_footer {
+    font-size: 17px;
+    color: #FFFFFF; /* Cambia "orange" al color deseado */
+    text-decoration: none; /* Elimina el subrayado */
+  }
+
+  .foot {
+    width: 100%;
+    color: #FFFFFF; /* cambbia el color del texto en el footer (pie de pagina) */
+    background-color: #000000; /* cambbia el color de fondo en el footer (pie de pagina) */
+    /*background-color: #A10010;*/
+    box-shadow: 0 0 150px rgba(0, 0, 0, 0.5); /* Agrega una sombra alrededor del borde */
+  }
