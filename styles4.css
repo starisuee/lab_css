@@ -1,0 +1,87 @@
+/*  ESTILOS DE CONTACTO  */
+
+
+body {                          /* EL ESTILO DEL CUERPO DEL DOCUMENTO CON FLEX, ALINEACION Y VISUALIZACION EN PANTALLA */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    background-color: cadetblue;
+    font-family: Helvetica, sans-serif;
+}
+
+header {                    /*    OTRO FLEX PARA EL HEADER ( EN DONDDE VA EL LOGO Y EL BANNER)*/
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:white;
+    object-position: initial;
+    width: 100%;
+    border: solid 1px;/* ESTE BORDER ES SOLO PARA VISUALIZAR EL ESPACIO PUEDE ELIMINARSE*/
+}
+
+main{                       /*      ESTILO DEL CONTENEDOR PRINCIPAL, PARA ALINEAR TODAS LAS SECCIONES DE NOTICIAS Y EL NAV*/
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionContacto {          /* SECTION PRINCIPAL, CONTIENE LAS CARTAS DE PRESENTACION Y SEPARA UNA DE OTRA CON SPACE-EVENLY */
+    display: flex;
+    justify-content: space-evenly;
+    width: 1400px;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 380px;
+    height: 450px;
+    margin-top: 130px;
+  }
+  
+  .imgWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .imgContacto {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.descripcionContacto {      /*      CONTENEDOR DE TEXTO DE CADA INTEGRANTE, SU DESCRIPCION Y JUSTIFICADA*/
+    width: 100%;
+    text-align: justify;
+    
+}
+
+.tituloContacto {       /*      ESTILO DE LOS TITULOS DE CADA PERSONA, DEFINIDOS COMO H2 EN HTML, AQUI SOLO LE DAMOS SU ESPACIO EN PAGINA.*/
+    width: 100%;
+    height: 0;
+    margin-left: 35px;
+    
+}
+
+.enlace_footer { /* Esta clase manipula los enlaces en el footer*/
+    font-size: 17px;
+    color: #FFFFFF; /* esta etiqueta cambia el color de los enlaces del footer */
+    text-decoration: none; /* Elimina el subrayado de los enlaces*/
+  }
+
+  .foot {
+    width: 95%;
+    color: #FFFFFF; /* cambbia el color del texto en el footer (pie de pagina) */
+    background-color: #000000; /* cambbia el color de fondo en el footer (pie de pagina) */
+    /*background-color: #A10010;*/
+    box-shadow: 0 0 150px rgba(0, 0, 0, 0.5); /* Agrega una sombra alrededor del borde */
+  }

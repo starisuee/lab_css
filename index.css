@@ -1,4 +1,4 @@
-body {
+body { /* Esta clase manipula el fondo y la fuente (tipografia) de la pagina*/
     background-color: #c9a799;
     font-family: Helvetica, sans-serif;
   }
@@ -9,7 +9,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color:white;
+    background-color: #000000;
     object-position: initial;
     width: 100%;
     border: solid 1px;/* ESTE BORDER ES SOLO PARA VISUALIZAR EL ESPACIO PUEDE ELIMINARSE*/
@@ -42,10 +42,10 @@ body {
     color: #B2281F; /* Cambia "orange" al color deseado */
   }
 
-  .enlace_footer {
+  .enlace_footer { /* Esta clase manipula los enlaces en el footer*/
     font-size: 17px;
-    color: #FFFFFF; /* Cambia "orange" al color deseado */
-    text-decoration: none; /* Elimina el subrayado */
+    color: #FFFFFF; /* esta etiqueta cambia el color de los enlaces del footer */
+    text-decoration: none; /* Elimina el subrayado de los enlaces*/
   }
 
   .foot {
