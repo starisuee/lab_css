@@ -65,7 +65,7 @@ main{                       /*      ESTILO DEL CONTENEDOR PRINCIPAL, PARA ALINEA
 
 .noticiaTitle {         /*  ALTURA DEL TITULO, PARA QUE LAS IMAGENES DEBAJO QUEDEN ALINEADAS*/
 
-    height: 60px;
+    height: 60px; 
   }
 
 .imgContainer {         /*  CONTENEDOR DE LA IMAGEN DE LA NOTICIA, CENTRA LAS IMAGENES CON EL TEXTO */
